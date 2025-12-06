@@ -1,0 +1,18 @@
+#upload_container{
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+#upload_container form{
+    display: flex;
+    flex-direction: column;
+
+}
+#upload_container input{
+    padding: 8px;
+    outline: none;
+    border: 1px solid lightblue;
+    margin-bottom: 8px;
+}
