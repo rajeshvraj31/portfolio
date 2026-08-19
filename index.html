@@ -212,6 +212,50 @@
   .clink.primary:hover{ filter:brightness(1.08); }
 
   footer{ text-align:center; padding:30px 0 50px; font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--muted); }
+
+  .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid var(--glass-border);
+      padding:20px;
+      border-radius:12px;
+    }
+/* CTA */
+    .cta{
+      display:flex;
+      gap:12px;
+      margin-top:10px;
+    }
+    .btn{
+      padding:10px 14px;
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,0.06);
+      cursor:pointer;
+      font-weight:600;
+      box-shadow: none;
+      color:white;
+     
+      text-decoration:none;
+    }
+    .btn.secondary{
+      background:transparent;
+      border:1px solid rgba(255,255,255,0.06);
+      color:#dfe8f6;
+      box-shadow:none;
+    }
+
+    .cta a:hover{
+  transform: translateY(-2px);
+  color: #7c5cff;
+  box-shadow: 0 10px 24px rgba(124,92,255,0.35);   
+}
+
+    footer{
+      text-align:center;
+      color:var(--muted);
+      margin-top:18px;
+      font-size:13px;
+    }
+
 </style>
 </head>
 <body>
@@ -265,6 +309,16 @@
           <div class="avatar-panel">
             <div class="avatar"><img src="scr/1779803478564.png" alt="Rajesh V"></div>
             <div class="status-pill"><span class="dot"></span>open to opportunities</div>
+            <section class="card" id="other" aria-labelledby="other-title">
+              <h3>CV</h3>
+              <div class="cta">
+                 <!-- Direct download button: place resume.pdf in same folder for this to download -->
+                <a target="_blank" class="btn" id="downloadBtn" href="scr/RAJESH_v.pdf" download="Rajesh_V_Resume.pdf" title="Download resume as PDF">Download PDF</a>
+
+                <a target="_blank" class="btn secondary" href="scr/RAJESH_v.docx" download="Rajesh_V_Resume.docx" title="Download DOCX (if present)">Download DOCX</a>
+              </div>
+            </section>
+
           </div>
         </div>
       </div>
@@ -408,6 +462,10 @@
           <div class="cert-thumb"><img src="scr/cert4.jpeg"></div>
           <div class="cert-info"><h4>Introduction to Digital Transformation with Google Cloud</h4><div class="issuer">Simplilearn</div></div>
         </div>
+        <div class="cert-card">
+          <div class="cert-thumb"><img src="scr/Screenshot 2026-08-19 170537.png"></div>
+          <div class="cert-info"><h4>Deloitte data analytics job simulation</h4><div class="issuer">Simplilearn</div></div>
+        </div>
       </div>
     </section>
 
@@ -441,7 +499,7 @@
     </section>
 
   </div>
-
+  
   <footer>© 2026 Rajesh V. All Rights Reserved.</footer>
 
 <script>
